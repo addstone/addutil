@@ -9,7 +9,8 @@ addutil(加瓦) 是一个 JAVA 工具类
 ### 使用说明
 
 ## 未来计划
-##### DataTime工具类
+##### Date工具类
+##### Time工具类
 ##### File工具类
 ##### Mail工具类
 ##### Print工具类
