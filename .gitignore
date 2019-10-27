@@ -19,7 +19,7 @@ hs_err_pid*
 .settings
 .classpath
 .project
-
+.factorypath
 
 bin
 target
