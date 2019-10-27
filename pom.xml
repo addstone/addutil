@@ -10,10 +10,6 @@
     <url>https://github.com/soucod/addutil</url>
     <description>一个 JAVA 工具类 (加瓦) 工具类</description>
 
-    <modules>
-        <!--        <module>addutil-string</module>-->
-    </modules>
-
     <organization>
         <name>soucod</name>
         <url>https://soucod.com</url>
@@ -39,7 +35,9 @@
         <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <jdk.version>1.8</jdk.version>
-        <soucod.addutil.string.version>0.0.1-SNAPSHOT</soucod.addutil.string.version>
+
+        <soucod.addutil.string.version>0.0.0.1-SNAPSHOT</soucod.addutil.string.version>
+        <soucod.addutil.object.version>0.0.0.1-SNAPSHOT</soucod.addutil.object.version>
     </properties>
 
     <scm>
@@ -82,12 +80,16 @@
 
 
     <dependencies>
-        <!--		<dependency>-->
-        <!--            <groupId>com.soucod.addutil.string</groupId>-->
-        <!--            <artifactId>addutil-string</artifactId>-->
-        <!--            <version>${soucod.addutil.string.version}</version>-->
-        <!--        </dependency>-->
-
+        <dependency>
+            <groupId>com.soucod.addutil</groupId>
+            <artifactId>addutil-string</artifactId>
+            <version>${soucod.addutil.string.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.soucod.addutil</groupId>
+            <artifactId>addutil-object</artifactId>
+            <version>${soucod.addutil.object.version}</version>
+        </dependency>
     </dependencies>
 
 
@@ -106,7 +108,7 @@
                         <version>${nexus-staging-maven-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
+                            <serverId>snapshot</serverId>
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
