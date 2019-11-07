@@ -28,8 +28,7 @@
 ##### Log工具类
 ##### JDBC工具类
 ##### Json工具类
-##### Http工具类
-##### HTTPS工具类
+##### Https工具类
 ##### Redis工具类
 ##### Spring工具类
 ##### Extra扩展工具类
