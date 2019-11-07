@@ -1,6 +1,6 @@
 # 简介
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil)
- addutil (加瓦) 是一个 JAVA 工具类
+ addutil 是一个 JAVA 工具类
 ## 组件
 ### String工具类
 ## 文档
