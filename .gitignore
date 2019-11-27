@@ -13,6 +13,7 @@
 *.log
 *.ctxt
 *.iml
+*.class
 hs_err_pid*
 
 .idea
@@ -20,6 +21,8 @@ hs_err_pid*
 .classpath
 .project
 .factorypath
+.vscode
+.mvn
 
 bin
 target

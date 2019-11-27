@@ -7,6 +7,12 @@
 
 ### 安装
 
+	<dependency>
+      <groupId>com.soucod.addutil</groupId>
+      <artifactId>addutil</artifactId>
+      <version>0.0.0.1-SNAPSHOT</version>
+    </dependency>
+
 ### 使用说明
 
 ## 未来计划
