@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.soucod.addutil</groupId>
     <artifactId>addutil</artifactId>
-    <version>0.0.0.1-SNAPSHOT</version>
+    <version>0.0.0.1</version>
     <packaging>jar</packaging>
     <name>addutil</name>
     <url>https://github.com/soucod/addutil</url>
-    <description>一个 JAVA 工具类 (加瓦) 工具类</description>
+    <description>一个 JAVA 工具类</description>
 
     <organization>
         <name>soucod</name>
