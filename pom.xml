@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.soucod.addutil</groupId>
     <artifactId>addutil</artifactId>
-    <version>0.0.0.1</version>
+    <version>0.0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>addutil</name>
     <url>https://github.com/soucod/addutil</url>
