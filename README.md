@@ -1,43 +1,47 @@
 # 简介
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil)
  addutil 是一个 JAVA 工具类
+
 ## 组件
-### String工具类
+### String 工具类
+
+String 工具类主要收录常用对字符处理的工具类
+
 ## 文档
 
 ### 安装
 
 	<dependency>
-      <groupId>com.soucod.addutil</groupId>
-      <artifactId>addutil</artifactId>
-      <version>0.0.0.1-SNAPSHOT</version>
-    </dependency>
+	  <groupId>com.soucod.addutil</groupId>
+	  <artifactId>addutil</artifactId>
+	  <version>0.0.0.1-SNAPSHOT</version>
+	</dependency>
 
 ### 使用说明
 
 ## 未来计划
-##### Date工具类
-##### Time工具类
-##### File工具类
-##### Mail工具类
-##### Print工具类
-##### Image工具类
-##### Object工具类
-##### IO工具类
-##### Lang工具类
-##### Map工具类
-##### Text工具类
-##### Thread工具类
-##### MD5工具类
-##### Xml工具类
-##### Poi工具类
-##### Log工具类
-##### JDBC工具类
-##### Json工具类
-##### Https工具类
-##### Redis工具类
-##### Spring工具类
-##### Extra扩展工具类
+##### Date 工具类
+##### Time 工具类
+##### File 工具类
+##### Mail 工具类
+##### Print 工具类
+##### Image 工具类
+##### Object 工具类
+##### IO 工具类
+##### Lang 工具类
+##### Map 工具类
+##### Text 工具类
+##### Thread 工具类
+##### MD5 工具类
+##### Xml 工具类
+##### Poi 工具类
+##### Log 工具类
+##### JDBC 工具类
+##### Json 工具类
+##### Https 工具类
+##### Redis 工具类
+##### Spring 工具类
+##### Extra 扩展工具类
 
 
 ## 贡献步骤
