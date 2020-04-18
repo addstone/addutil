@@ -1,6 +1,14 @@
 # 简介
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.soucod/addutil/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.addstone/addutil)
  addutil 是一个 JAVA 工具类
+
+## 开发工具
+
+IntelliJ IDEA 2019.3.4
+
+OpenJdk 1.8.231
+
+Maven 3.6.1
 
 ## 组件
 ### String 工具类
@@ -11,11 +19,13 @@ String 工具类主要收录常用对字符处理的工具类
 
 ### 安装
 
-	<dependency>
-	  <groupId>com.soucod.addutil</groupId>
-	  <artifactId>addutil</artifactId>
-	  <version>0.0.0.1-SNAPSHOT</version>
-	</dependency>
+```xml
+<dependency>
+  <groupId>com.soucod.addutil</groupId>
+  <artifactId>addutil</artifactId>
+  <version>0.0.0.1-SNAPSHOT</version>
+</dependency>
+```
 
 ### 使用说明
 
