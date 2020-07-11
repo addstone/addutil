@@ -76,20 +76,29 @@
             <id>releases</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
+
+        <!--        <snapshotRepository>-->
+        <!--            <id>rdc-snapshots</id>-->
+        <!--            <url>https://repo.rdc.aliyun.com/repository/77949-snapshot-Vs0XUt/</url>-->
+        <!--        </snapshotRepository>-->
+        <!--        <repository>-->
+        <!--            <id>rdc-releases</id>-->
+        <!--            <url>https://repo.rdc.aliyun.com/repository/77949-release-NaSNQf/</url>-->
+        <!--        </repository>-->
     </distributionManagement>
 
 
     <dependencies>
-        <dependency>
-            <groupId>com.soucod.addutil</groupId>
-            <artifactId>addutil-string</artifactId>
-            <version>${soucod.addutil.string.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.soucod.addutil</groupId>
-            <artifactId>addutil-object</artifactId>
-            <version>${soucod.addutil.object.version}</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.soucod.addutil</groupId>-->
+        <!--            <artifactId>addutil-string</artifactId>-->
+        <!--            <version>${soucod.addutil.string.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.soucod.addutil</groupId>-->
+        <!--            <artifactId>addutil-object</artifactId>-->
+        <!--            <version>${soucod.addutil.object.version}</version>-->
+        <!--        </dependency>-->
     </dependencies>
 
 

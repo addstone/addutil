@@ -8,7 +8,7 @@ IntelliJ IDEA 2019.3.4
 
 OpenJdk 1.8.231
 
-Maven 3.6.1
+Maven 3.6.3
 
 ## 组件
 ### String 工具类
