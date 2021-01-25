@@ -4,9 +4,9 @@
 
 ## 开发工具
 
-IntelliJ IDEA 2019.3.4
+IntelliJ CE IDEA 2019.3.4
 
-OpenJdk 1.8.231
+OpenJdk 1.8.271
 
 Maven 3.6.3
 

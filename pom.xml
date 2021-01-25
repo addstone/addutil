@@ -5,8 +5,8 @@
     <groupId>com.soucod.addutil</groupId>
     <artifactId>addutil</artifactId>
     <version>0.0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>addutil</name>
+    <packaging>pom</packaging>
+    <name>addUtil</name>
     <url>https://github.com/soucod/addutil</url>
     <description>一个 JAVA 工具类</description>
 
@@ -36,8 +36,8 @@
         <java.version>1.8</java.version>
         <jdk.version>1.8</jdk.version>
 
-        <soucod.addutil.string.version>0.0.0.1-SNAPSHOT</soucod.addutil.string.version>
-        <soucod.addutil.object.version>0.0.0.1-SNAPSHOT</soucod.addutil.object.version>
+        <!--        <soucod.addutil.string.version>0.0.0.1-SNAPSHOT</soucod.addutil.string.version>-->
+        <!--        <soucod.addutil.object.version>0.0.0.1-SNAPSHOT</soucod.addutil.object.version>-->
     </properties>
 
     <scm>
@@ -45,7 +45,9 @@
         <developerConnection>scm:git:git@github.com:soucod/addutil.git</developerConnection>
         <url>git@github.com:soucod/addutil.git</url>
     </scm>
-
+    <modules>
+        <module>addutil-commons</module>
+    </modules>
     <developers>
         <developer>
             <id>addutil@soucod.com</id>
@@ -111,17 +113,17 @@
             <id>release</id>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>${nexus-staging-maven-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>snapshot</serverId>
-                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                        </configuration>
-                    </plugin>
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.sonatype.plugins</groupId>-->
+                    <!--                        <artifactId>nexus-staging-maven-plugin</artifactId>-->
+                    <!--                        <version>${nexus-staging-maven-plugin.version}</version>-->
+                    <!--                        <extensions>true</extensions>-->
+                    <!--                        <configuration>-->
+                    <!--                            <serverId>snapshot</serverId>-->
+                    <!--                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
+                    <!--                            <autoReleaseAfterClose>true</autoReleaseAfterClose>-->
+                    <!--                        </configuration>-->
+                    <!--                    </plugin>-->
 
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
