@@ -41,6 +41,9 @@ String 工具类主要收录处理常用内容的工具类
 ##### Object 工具类
 ##### IO 工具类
 ##### Lang 工具类
+
+​	StringUtils
+
 ##### Map 工具类
 ##### Text 工具类
 ##### Thread 工具类
