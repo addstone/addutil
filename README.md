@@ -15,7 +15,7 @@ Maven 3.6.3
 
 [addutil-string](https://github.com/soucod/addutil-string)
 
-String 工具类主要收录常用对字符处理的工具类
+String 工具类主要收录处理常用内容的工具类
 
 ## 文档
 
