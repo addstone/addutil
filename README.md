@@ -4,7 +4,7 @@
 
 ## 开发工具
 
-IntelliJ CE IDEA 2019.3.4
+IntelliJ CE IDEA 2019.3.5
 
 OpenJdk 1.8.271
 
