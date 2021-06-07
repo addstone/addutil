@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.codec.digest;
+package com.soucod.addutil.commons.codec.digest;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -26,8 +26,8 @@ import java.util.List;
 
 import javax.crypto.Mac;
 
-import org.apache.commons.lang3.JavaVersion;
-import org.apache.commons.lang3.SystemUtils;
+import com.soucod.addutil.commons.lang.JavaVersion;
+import com.soucod.addutil.commons.lang.SystemUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Assume;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.net;
+package com.soucod.addutil.commons.codec.net;
 
 import org.junit.Test;
 

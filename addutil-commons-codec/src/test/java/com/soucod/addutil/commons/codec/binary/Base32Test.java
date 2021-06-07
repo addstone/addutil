@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -27,9 +27,9 @@ import static org.junit.Assert.fail;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import org.apache.commons.codec.CodecPolicy;
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.lang3.ArrayUtils;
+import com.soucod.addutil.commons.codec.CodecPolicy;
+import com.soucod.addutil.commons.codec.DecoderException;
+import com.soucod.addutil.commons.lang.ArrayUtils;
 import org.junit.Test;
 
 public class Base32Test {

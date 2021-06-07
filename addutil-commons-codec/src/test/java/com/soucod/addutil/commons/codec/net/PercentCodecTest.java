@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.net;
+package com.soucod.addutil.commons.codec.net;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -23,8 +23,8 @@ import static org.junit.Assert.assertTrue;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.codec.EncoderException;
+import com.soucod.addutil.commons.codec.DecoderException;
+import com.soucod.addutil.commons.codec.EncoderException;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.codec.digest;
+package com.soucod.addutil.commons.codec.digest;
 
 import java.util.Arrays;
 

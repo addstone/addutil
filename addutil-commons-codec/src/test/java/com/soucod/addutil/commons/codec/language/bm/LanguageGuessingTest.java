@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.language.bm;
+package com.soucod.addutil.commons.codec.language.bm;
 
 import static org.junit.Assert.assertTrue;
 

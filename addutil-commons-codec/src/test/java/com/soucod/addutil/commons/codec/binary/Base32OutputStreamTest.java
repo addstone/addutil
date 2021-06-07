@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
-import org.apache.commons.codec.CodecPolicy;
+import com.soucod.addutil.commons.codec.CodecPolicy;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;

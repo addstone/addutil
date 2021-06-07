@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.language.bm;
+package com.soucod.addutil.commons.codec.language.bm;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.commons.codec.EncoderException;
-import org.apache.commons.codec.StringEncoder;
-import org.apache.commons.codec.StringEncoderAbstractTest;
+import com.soucod.addutil.commons.codec.EncoderException;
+import com.soucod.addutil.commons.codec.StringEncoder;
+import com.soucod.addutil.commons.codec.StringEncoderAbstractTest;
 import org.junit.Assert;
 import org.junit.Test;
 

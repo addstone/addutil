@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Properties;
 
 import com.soucod.addutil.commons.io.input.NullReader;
-import com.soucod.addutil.commons.lang3.ArrayUtils;
+import com.soucod.addutil.commons.lang.ArrayUtils;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

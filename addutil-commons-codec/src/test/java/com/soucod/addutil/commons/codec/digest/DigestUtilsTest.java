@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.digest;
+package com.soucod.addutil.commons.codec.digest;
 
-import static org.apache.commons.codec.binary.StringUtils.getBytesUtf8;
+import static com.soucod.addutil.commons.codec.binary.StringUtils.getBytesUtf8;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -38,10 +38,10 @@ import java.security.MessageDigest;
 import java.util.Locale;
 import java.util.Random;
 
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.binary.StringUtils;
-import org.apache.commons.lang3.JavaVersion;
-import org.apache.commons.lang3.SystemUtils;
+import com.soucod.addutil.commons.codec.binary.Hex;
+import com.soucod.addutil.commons.codec.binary.StringUtils;
+import com.soucod.addutil.commons.lang.JavaVersion;
+import com.soucod.addutil.commons.lang.SystemUtils;
 import org.junit.After;
 import org.junit.Assume;
 import org.junit.Before;

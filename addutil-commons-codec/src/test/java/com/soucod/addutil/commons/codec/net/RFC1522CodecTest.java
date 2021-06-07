@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.net;
+package com.soucod.addutil.commons.codec.net;
 
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.fail;
 
-import org.apache.commons.codec.CharEncoding;
-import org.apache.commons.codec.DecoderException;
+import com.soucod.addutil.commons.codec.CharEncoding;
+import com.soucod.addutil.commons.codec.DecoderException;
 import org.junit.Test;
 
 /**

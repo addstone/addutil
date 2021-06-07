@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertTrue;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-import org.apache.commons.codec.BinaryDecoder;
-import org.apache.commons.codec.BinaryEncoder;
-import org.apache.commons.codec.Decoder;
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.codec.Encoder;
-import org.apache.commons.codec.EncoderException;
+import com.soucod.addutil.commons.codec.BinaryDecoder;
+import com.soucod.addutil.commons.codec.BinaryEncoder;
+import com.soucod.addutil.commons.codec.Decoder;
+import com.soucod.addutil.commons.codec.DecoderException;
+import com.soucod.addutil.commons.codec.Encoder;
+import com.soucod.addutil.commons.codec.EncoderException;
 import org.junit.Test;
 
 /**
@@ -356,7 +356,7 @@ public class Base64Codec13Test {
     }
 
     /**
-     * Tests to make sure Base64's implementation of the org.apache.commons.codec.Encoder
+     * Tests to make sure Base64's implementation of the com.soucod.addutil.commons.codec.Encoder
      * interface is behaving identical to commons-codec-1.3.jar.
      *
      * @throws EncoderException problem
@@ -375,7 +375,7 @@ public class Base64Codec13Test {
     }
 
     /**
-     * Tests to make sure Base64's implementation of the org.apache.commons.codec.Decoder
+     * Tests to make sure Base64's implementation of the com.soucod.addutil.commons.codec.Decoder
      * interface is behaving identical to commons-codec-1.3.jar.
      *
      * @throws DecoderException problem
@@ -394,7 +394,7 @@ public class Base64Codec13Test {
     }
 
     /**
-     * Tests to make sure Base64's implementation of the org.apache.commons.codec.BinaryEncoder
+     * Tests to make sure Base64's implementation of the com.soucod.addutil.commons.codec.BinaryEncoder
      * interface is behaving identical to commons-codec-1.3.jar.
      *
      * @throws EncoderException problem
@@ -413,7 +413,7 @@ public class Base64Codec13Test {
     }
 
     /**
-     * Tests to make sure Base64's implementation of the org.apache.commons.codec.BinaryDecoder
+     * Tests to make sure Base64's implementation of the com.soucod.addutil.commons.codec.BinaryDecoder
      * interface is behaving identical to commons-codec-1.3.jar.
      *
      * @throws DecoderException problem

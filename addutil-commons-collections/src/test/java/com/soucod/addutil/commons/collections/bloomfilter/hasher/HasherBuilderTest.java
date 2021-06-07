@@ -17,7 +17,7 @@
 package com.soucod.addutil.commons.collections.bloomfilter.hasher;
 
 import com.soucod.addutil.commons.collections.bloomfilter.hasher.Hasher.Builder;
-import com.soucod.addutil.commons.lang3.NotImplementedException;
+import com.soucod.addutil.commons.lang.NotImplementedException;
 import org.junit.Assert;
 import org.junit.Test;
 import java.nio.ByteBuffer;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -24,7 +24,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Tests {@link org.apache.commons.codec.binary.CharSequenceUtils}.
+ * Tests {@link com.soucod.addutil.commons.codec.binary.CharSequenceUtils}.
  *
  * <p>Tests copied from Apache Commons Lang 3.11. The implementation in codec is based on
  * an earlier version of Lang and some tests fail. The CharSequenceUtils class is public but

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 /**
  * This random data was encoded by OpenSSL. Java had nothing to do with it. This data helps us test interop between

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import org.apache.commons.codec.CodecPolicy;
+import com.soucod.addutil.commons.codec.CodecPolicy;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -111,7 +111,7 @@ public class Base64InputStreamTest {
      * sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306) at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158) at
      * java.io.InputStreamReader.read(InputStreamReader.java:167) at java.io.BufferedReader.fill(BufferedReader.java:136) at
      * java.io.BufferedReader.readLine(BufferedReader.java:299) at java.io.BufferedReader.readLine(BufferedReader.java:362) at
-     * org.apache.commons.codec.binary.Base64InputStreamTest.testInputStreamReader(Base64InputStreamTest.java:75)
+     * com.soucod.addutil.commons.codec.binary.Base64InputStreamTest.testInputStreamReader(Base64InputStreamTest.java:75)
      *
      * But in commons-codec-1.5 it's fixed. :-)
      *

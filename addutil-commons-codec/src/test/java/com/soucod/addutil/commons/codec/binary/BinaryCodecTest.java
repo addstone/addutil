@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -23,8 +23,8 @@ import static org.junit.Assert.fail;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.codec.EncoderException;
+import com.soucod.addutil.commons.codec.DecoderException;
+import com.soucod.addutil.commons.codec.EncoderException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

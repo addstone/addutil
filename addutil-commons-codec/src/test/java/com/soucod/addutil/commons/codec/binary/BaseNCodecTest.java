@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.commons.codec.binary.BaseNCodec.Context;
+import com.soucod.addutil.commons.codec.binary.BaseNCodec.Context;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.Before;

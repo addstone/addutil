@@ -25,7 +25,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-import com.soucod.addutil.commons.lang3.reflect.FieldUtils;
+import com.soucod.addutil.commons.lang.reflect.FieldUtils;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.binary;
+package com.soucod.addutil.commons.codec.binary;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -30,13 +30,13 @@ import java.nio.charset.StandardCharsets;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.codec.EncoderException;
+import com.soucod.addutil.commons.codec.DecoderException;
+import com.soucod.addutil.commons.codec.EncoderException;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Tests {@link org.apache.commons.codec.binary.Hex}.
+ * Tests {@link com.soucod.addutil.commons.codec.binary.Hex}.
  *
  */
 public class HexTest {

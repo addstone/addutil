@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.cli;
+package com.soucod.addutil.commons.codec.cli;
 
 import org.junit.Test;
 

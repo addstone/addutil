@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.codec.digest;
+package com.soucod.addutil.commons.codec.digest;
 
 import org.junit.Assert;
 import org.junit.Assume;
@@ -24,9 +24,9 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.apache.commons.codec.binary.StringUtils;
-import org.apache.commons.codec.digest.MurmurHash3.IncrementalHash32;
-import org.apache.commons.codec.digest.MurmurHash3.IncrementalHash32x86;
+import com.soucod.addutil.commons.codec.binary.StringUtils;
+import com.soucod.addutil.commons.codec.digest.MurmurHash3.IncrementalHash32;
+import com.soucod.addutil.commons.codec.digest.MurmurHash3.IncrementalHash32x86;
 import org.junit.Test;
 
 /**

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.codec.digest;
+package com.soucod.addutil.commons.codec.digest;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,8 +24,8 @@ import java.io.IOException;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.binary.StringUtils;
+import com.soucod.addutil.commons.codec.binary.Hex;
+import com.soucod.addutil.commons.codec.binary.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
