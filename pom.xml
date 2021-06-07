@@ -50,6 +50,7 @@
         <module>addutil-commons-beanutils</module>
         <module>addutil-commons-logging</module>
         <module>addutil-commons-collections</module>
+        <module>addutil-commons-codec</module>
     </modules>
     <developers>
         <developer>
