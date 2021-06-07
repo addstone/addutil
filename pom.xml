@@ -49,6 +49,7 @@
         <module>addutil-commons-lang</module>
         <module>addutil-commons-beanutils</module>
         <module>addutil-commons-logging</module>
+        <module>addutil-commons-collections</module>
     </modules>
     <developers>
         <developer>
