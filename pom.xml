@@ -47,6 +47,8 @@
     </scm>
     <modules>
         <module>addutil-commons-lang</module>
+        <module>addutil-commons-beanutils</module>
+        <module>addutil-commons-logging</module>
     </modules>
     <developers>
         <developer>
