@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.commons.beanutils2;
+package com.soucod.addutil.commons.beanutils;
 
 import java.beans.IndexedPropertyDescriptor;
 import java.beans.PropertyDescriptor;
@@ -28,9 +28,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.beanutils2.expression.Resolver;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import com.soucod.addutil.commons.beanutils.expression.Resolver;
+import com.soucod.addutil.commons.logging.Log;
+import com.soucod.addutil.commons.logging.LogFactory;
 
 /**
  * <p>JavaBean property population methods.</p>

@@ -16,7 +16,7 @@
  */
 
 
-package org.apache.commons.beanutils2;
+package com.soucod.addutil.commons.beanutils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;

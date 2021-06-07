@@ -1026,8 +1026,8 @@
  * For example:
  * </p>
  * <pre><code>
- *     import org.apache.commons.collections4.comparators.ComparableComparator;
- *     import org.apache.commons.collections4.comparators.ReverseComparator;
+ *     import com.soucod.addutil.commons.collections4.comparators.ComparableComparator;
+ *     import com.soucod.addutil.commons.collections4.comparators.ReverseComparator;
  *     import com.soucod.addutil.commons.beanutils.BeanComparator;
  *     ...
  *     BeanComparator reversedNaturalOrderBeanComparator

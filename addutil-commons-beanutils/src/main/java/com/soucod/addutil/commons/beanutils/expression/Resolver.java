@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.beanutils2.expression;
+package com.soucod.addutil.commons.beanutils.expression;
 
 /**
  * Property Name Expression Resolver.
@@ -59,34 +59,34 @@ package org.apache.commons.beanutils2.expression;
  * BeanUtils/PropertyUtils uses the {@code resolver}. The following are
  * the main methods that use it:
  * <ul>
- *   <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean}
+ *   <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean}
  *       <ul>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#getIndexedProperty(Object, String)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#getMappedProperty(Object, String)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#getNestedProperty(Object, String)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#getPropertyDescriptor(Object, String)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#getSimpleProperty(Object, String)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#setIndexedProperty(Object, String, Object)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#setMappedProperty(Object, String, Object)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#setNestedProperty(Object, String, Object)}</li>
- *          <li>{@link org.apache.commons.beanutils2.PropertyUtilsBean#setSimpleProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#getIndexedProperty(Object, String)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#getMappedProperty(Object, String)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#getNestedProperty(Object, String)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#getPropertyDescriptor(Object, String)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#getSimpleProperty(Object, String)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#setIndexedProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#setMappedProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#setNestedProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.PropertyUtilsBean#setSimpleProperty(Object, String, Object)}</li>
  *      </ul>
  *   </li>
- *   <li>{@link org.apache.commons.beanutils2.BeanUtilsBean}
+ *   <li>{@link com.soucod.addutil.commons.beanutils.BeanUtilsBean}
  *      <ul>
- *          <li>{@link org.apache.commons.beanutils2.BeanUtilsBean#copyProperty(Object, String, Object)}</li>
- *          <li>{@link org.apache.commons.beanutils2.BeanUtilsBean#setProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.BeanUtilsBean#copyProperty(Object, String, Object)}</li>
+ *          <li>{@link com.soucod.addutil.commons.beanutils.BeanUtilsBean#setProperty(Object, String, Object)}</li>
  *      </ul>
  *   </li>
- *   <li>{@link org.apache.commons.beanutils2.locale.LocaleBeanUtilsBean}
+ *   <li>{@link com.soucod.addutil.commons.beanutils.locale.LocaleBeanUtilsBean}
  *      <ul>
- *          <li>{@link org.apache.commons.beanutils2.locale.LocaleBeanUtilsBean#setProperty(Object,
+ *          <li>{@link com.soucod.addutil.commons.beanutils.locale.LocaleBeanUtilsBean#setProperty(Object,
  *          String, Object, String)}</li>
  *      </ul>
  *   </li>
  * </ul>
  *
- * @see org.apache.commons.beanutils2.PropertyUtilsBean#setResolver(Resolver)
+ * @see com.soucod.addutil.commons.beanutils.PropertyUtilsBean#setResolver(Resolver)
  * @since 1.8.0
  */
 public interface Resolver {
