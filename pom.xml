@@ -95,11 +95,12 @@
 
 
     <dependencies>
-        <!--        <dependency>-->
-        <!--            <groupId>com.soucod.addutil</groupId>-->
-        <!--            <artifactId>addutil-string</artifactId>-->
-        <!--            <version>${soucod.addutil.string.version}</version>-->
-        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>1.18.20</version>
+        </dependency>
         <!--        <dependency>-->
         <!--            <groupId>com.soucod.addutil</groupId>-->
         <!--            <artifactId>addutil-object</artifactId>-->
