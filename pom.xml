@@ -46,7 +46,7 @@
         <url>git@github.com:soucod/addutil.git</url>
     </scm>
     <modules>
-        <module>addutil-commons</module>
+        <module>addutil-commons-lang</module>
     </modules>
     <developers>
         <developer>
