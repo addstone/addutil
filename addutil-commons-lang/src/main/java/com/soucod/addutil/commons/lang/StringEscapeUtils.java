@@ -10,18 +10,20 @@ package com.soucod.addutil.commons.lang;
  * Since: 0.0.0.1
  */
 
-import com.soucod.addutil.commons.lang.text.translate.AggregateTranslator;
-import com.soucod.addutil.commons.lang.text.translate.CharSequenceTranslator;
-import com.soucod.addutil.commons.lang.text.translate.EntityArrays;
-import com.soucod.addutil.commons.lang.text.translate.JavaUnicodeEscaper;
-import com.soucod.addutil.commons.lang.text.translate.LookupTranslator;
-import com.soucod.addutil.commons.lang.text.translate.NumericEntityEscaper;
-import com.soucod.addutil.commons.lang.text.translate.NumericEntityUnescaper;
-import com.soucod.addutil.commons.lang.text.translate.OctalUnescaper;
-import com.soucod.addutil.commons.lang.text.translate.UnicodeUnescaper;
-import com.soucod.addutil.commons.lang.text.translate.UnicodeUnpairedSurrogateRemover;
 import java.io.IOException;
 import java.io.Writer;
+import org.apache.commons.lang3.CharUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.translate.AggregateTranslator;
+import org.apache.commons.lang3.text.translate.CharSequenceTranslator;
+import org.apache.commons.lang3.text.translate.EntityArrays;
+import org.apache.commons.lang3.text.translate.JavaUnicodeEscaper;
+import org.apache.commons.lang3.text.translate.LookupTranslator;
+import org.apache.commons.lang3.text.translate.NumericEntityEscaper;
+import org.apache.commons.lang3.text.translate.NumericEntityUnescaper;
+import org.apache.commons.lang3.text.translate.OctalUnescaper;
+import org.apache.commons.lang3.text.translate.UnicodeUnescaper;
+import org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover;
 
 /**
  * <p>Escapes and unescapes {@code String}s for

@@ -37,7 +37,7 @@ import java.nio.charset.IllegalCharsetNameException;
  * This class will be removed in a future release.
  */
 @Deprecated
-public class CharEncoding {
+public class CharEncoding extends org.apache.commons.lang3.CharEncoding {
 
     /**
      * <p>ISO Latin Alphabet #1, also known as ISO-LATIN-1.</p>
