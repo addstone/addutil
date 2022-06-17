@@ -25,7 +25,7 @@ import java.nio.charset.UnsupportedCharsetException;
  *
  * @since 3.10
  */
-class Charsets {
+class Charsets extends org.apache.commons.lang3.Charsets {
 
     /**
      * Returns the given {@code charset} or the default Charset if {@code charset} is null.

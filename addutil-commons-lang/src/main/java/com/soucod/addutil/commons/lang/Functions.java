@@ -16,6 +16,9 @@
  */
 package com.soucod.addutil.commons.lang;
 
+import com.soucod.addutil.commons.lang.function.Failable;
+import com.soucod.addutil.commons.lang.function.FailableBooleanSupplier;
+import com.soucod.addutil.commons.lang.stream.Streams.FailableStream;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.lang.reflect.UndeclaredThrowableException;
@@ -30,9 +33,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
-
-import com.soucod.addutil.commons.lang.Streams.FailableStream;
-import com.soucod.addutil.commons.lang.function.FailableBooleanSupplier;
 
 /**
  * This class provides utility functions, and classes for working with the {@code java.util.function} package, or more
@@ -66,7 +66,7 @@ import com.soucod.addutil.commons.lang.function.FailableBooleanSupplier;
  * version.
  * </p>
  * @since 3.9
- * @deprecated Use {@link com.soucod.addutil.commons.lang.function.Failable}.
+ * @deprecated Use {@link Failable}.
  */
 @Deprecated
 public class Functions {
@@ -74,12 +74,12 @@ public class Functions {
     /**
      * A functional interface like {@link BiConsumer} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <O1> Consumed type 1.
      * @param <O2> Consumed type 2.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableBiConsumer}.
+     * @deprecated Use {@link function.FailableBiConsumer}.
      */
     @Deprecated
     @FunctionalInterface
@@ -98,13 +98,13 @@ public class Functions {
     /**
      * A functional interface like {@link BiFunction} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <O1> Input type 1.
      * @param <O2> Input type 2.
      * @param <R> Return type.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableBiFunction}.
+     * @deprecated Use {@link function.FailableBiFunction}.
      */
     @Deprecated
     @FunctionalInterface
@@ -124,12 +124,12 @@ public class Functions {
     /**
      * A functional interface like {@link BiPredicate} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <O1> Predicate type 1.
      * @param <O2> Predicate type 2.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableBiPredicate}.
+     * @deprecated Use {@link function.FailableBiPredicate}.
      */
     @Deprecated
     @FunctionalInterface
@@ -149,11 +149,11 @@ public class Functions {
     /**
      * A functional interface like {@link java.util.concurrent.Callable} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <R> Return type.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableCallable}.
+     * @deprecated Use {@link function.FailableCallable}.
      */
     @Deprecated
     @FunctionalInterface
@@ -171,11 +171,11 @@ public class Functions {
     /**
      * A functional interface like {@link Consumer} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <O> Consumed type 1.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableConsumer}.
+     * @deprecated Use {@link function.FailableConsumer}.
      */
     @Deprecated
     @FunctionalInterface
@@ -193,12 +193,12 @@ public class Functions {
     /**
      * A functional interface like {@link Function} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <I> Input type 1.
      * @param <R> Return type.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableFunction}.
+     * @deprecated Use {@link function.FailableFunction}.
      */
     @Deprecated
     @FunctionalInterface
@@ -217,11 +217,11 @@ public class Functions {
     /**
      * A functional interface like {@link Predicate} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <I> Predicate type 1.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailablePredicate}.
+     * @deprecated Use {@link function.FailablePredicate}.
      */
     @Deprecated
     @FunctionalInterface
@@ -240,10 +240,10 @@ public class Functions {
     /**
      * A functional interface like {@link Runnable} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableRunnable}.
+     * @deprecated Use {@link function.FailableRunnable}.
      */
     @Deprecated
     @FunctionalInterface
@@ -260,11 +260,11 @@ public class Functions {
     /**
      * A functional interface like {@link Supplier} that declares a {@code Throwable}.
      *
-     * <p>TODO for 4.0: Move to com.soucod.addutil.commons.lang.function.</p>
+     * <p>TODO for 4.0: Move to function.</p>
      *
      * @param <R> Return type.
      * @param <T> Thrown exception.
-     * @deprecated Use {@link com.soucod.addutil.commons.lang.function.FailableSupplier}.
+     * @deprecated Use {@link function.FailableSupplier}.
      */
     @Deprecated
     @FunctionalInterface
@@ -290,7 +290,7 @@ public class Functions {
      * @param <T> the type of checked exception the consumer may throw
      */
     public static <O1, O2, T extends Throwable> void accept(final FailableBiConsumer<O1, O2, T> consumer,
-        final O1 object1, final O2 object2) {
+            final O1 object1, final O2 object2) {
         run(() -> consumer.accept(object1, object2));
     }
 
@@ -319,7 +319,7 @@ public class Functions {
      * @return the value returned from the function
      */
     public static <O1, O2, O, T extends Throwable> O apply(final FailableBiFunction<O1, O2, O, T> function,
-        final O1 input1, final O2 input2) {
+            final O1 input1, final O2 input2) {
         return get(() -> function.apply(input1, input2));
     }
 
@@ -590,7 +590,7 @@ public class Functions {
      * @return the boolean value returned by the predicate
      */
     public static <O1, O2, T extends Throwable> boolean test(final FailableBiPredicate<O1, O2, T> predicate,
-        final O1 object1, final O2 object2) {
+            final O1 object1, final O2 object2) {
         return getAsBoolean(() -> predicate.test(object1, object2));
     }
 
@@ -629,8 +629,8 @@ public class Functions {
      */
     @SafeVarargs
     public static void tryWithResources(final FailableRunnable<? extends Throwable> action,
-        final FailableConsumer<Throwable, ? extends Throwable> errorHandler,
-        final FailableRunnable<? extends Throwable>... resources) {
+            final FailableConsumer<Throwable, ? extends Throwable> errorHandler,
+            final FailableRunnable<? extends Throwable>... resources) {
         final FailableConsumer<Throwable, ? extends Throwable> actualErrorHandler;
         if (errorHandler == null) {
             actualErrorHandler = Functions::rethrow;
@@ -688,7 +688,7 @@ public class Functions {
      */
     @SafeVarargs
     public static void tryWithResources(final FailableRunnable<? extends Throwable> action,
-        final FailableRunnable<? extends Throwable>... resources) {
+            final FailableRunnable<? extends Throwable>... resources) {
         tryWithResources(action, null, resources);
     }
 }
