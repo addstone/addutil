@@ -317,7 +317,8 @@ public enum JavaVersion {
         if (value.contains(".")) {
             final String[] toParse = value.split("\\.");
             if (toParse.length >= 2) {
-                return NumberUtils.toFloat(toParse[0] + '.' + toParse[1], defaultReturnValue);
+                return NumberUtils.toFloat(toParse[0] + '.' + toParse[1],
+                        defaultReturnValue);
             }
         } else {
             return NumberUtils.toFloat(value, defaultReturnValue);

@@ -52,7 +52,7 @@ public class CharSetUtils {
         if (StringUtils.isEmpty(str) || deepEmpty(set)) {
             return false;
         }
-        final CharSet chars = CharSet.getInstance(set);
+        final CharSet chars = (CharSet) CharSet.getInstance(set);
         for (final char c : str.toCharArray()) {
             if (chars.contains(c)) {
                 return true;
@@ -83,7 +83,7 @@ public class CharSetUtils {
         if (StringUtils.isEmpty(str) || deepEmpty(set)) {
             return 0;
         }
-        final CharSet chars = CharSet.getInstance(set);
+        final CharSet chars = (CharSet) CharSet.getInstance(set);
         int count = 0;
         for (final char c : str.toCharArray()) {
             if (chars.contains(c)) {
@@ -174,7 +174,7 @@ public class CharSetUtils {
      * @return the modified String, not null
      */
     private static String modify(final String str, final String[] set, final boolean expect) {
-        final CharSet chars = CharSet.getInstance(set);
+        final CharSet chars = (CharSet) CharSet.getInstance(set);
         final StringBuilder buffer = new StringBuilder(str.length());
         final char[] chrs = str.toCharArray();
         for (final char chr : chrs) {
@@ -207,7 +207,7 @@ public class CharSetUtils {
         if (StringUtils.isEmpty(str) || deepEmpty(set)) {
             return str;
         }
-        final CharSet chars = CharSet.getInstance(set);
+        final CharSet chars = (CharSet) CharSet.getInstance(set);
         final StringBuilder buffer = new StringBuilder(str.length());
         final char[] chrs = str.toCharArray();
         final int sz = chrs.length;

@@ -17,9 +17,6 @@
 package com.soucod.addutil.commons.lang;
 
 
-import org.apache.commons.lang3.JavaVersion;
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.File;
 
 /**
@@ -456,7 +453,7 @@ public class SystemUtils {
      * @since Java 1.3
      */
     public static final String JAVA_SPECIFICATION_VERSION = getSystemProperty("java.specification.version");
-    private static final org.apache.commons.lang3.JavaVersion JAVA_SPECIFICATION_VERSION_AS_ENUM = org.apache.commons.lang3.JavaVersion.get(
+    private static final JavaVersion JAVA_SPECIFICATION_VERSION_AS_ENUM = JavaVersion.get(
             JAVA_SPECIFICATION_VERSION);
 
     /**
@@ -1831,7 +1828,7 @@ public class SystemUtils {
      * @param requiredVersion the required version, for example 1.31f
      * @return {@code true} if the actual version is equal or greater than the required version
      */
-    public static boolean isJavaVersionAtLeast(final org.apache.commons.lang3.JavaVersion requiredVersion) {
+    public static boolean isJavaVersionAtLeast(final JavaVersion requiredVersion) {
         return JAVA_SPECIFICATION_VERSION_AS_ENUM.atLeast(requiredVersion);
     }
 
@@ -1883,7 +1880,7 @@ public class SystemUtils {
      * @return true if matches, or false if not or can't determine
      */
     static boolean isOSMatch(final String osName, final String osVersion, final String osNamePrefix,
-                             final String osVersionPrefix) {
+            final String osVersionPrefix) {
         if (osName == null || osVersion == null) {
             return false;
         }
