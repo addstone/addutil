@@ -17,25 +17,17 @@
 package com.soucod.addutil.commons.lang.stream;
 
 import com.soucod.addutil.commons.lang.function.Failable;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.apache.commons.lang3.Functions;
 import org.apache.commons.lang3.Functions.FailableConsumer;
 import org.apache.commons.lang3.Functions.FailableFunction;
 import org.apache.commons.lang3.Functions.FailablePredicate;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Provides utility functions, and classes for working with the
@@ -69,6 +61,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
     /**
      * A reduced, and simplified version of a {@link Stream} with
      * failable method signatures.
+     *
      * @param <O> The streams element type.
      * @deprecated Use {@link org.apache.commons.lang3.stream.Streams.FailableStream}.
      */
@@ -80,6 +73,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
 
         /**
          * Constructs a new instance with the given {@code stream}.
+         *
          * @param stream The stream.
          */
         public FailableStream(final Stream<O> stream) {
@@ -138,7 +132,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * mutable data structures.  Therefore, even when executed in parallel
          * with non-thread-safe data structures (such as {@code ArrayList}), no
          * additional synchronization is needed for a parallel reduction.
-         *
+         * <p>
          * Note
          * The following will accumulate strings into an ArrayList:
          * <pre>{@code
@@ -159,8 +153,8 @@ public class Streams extends org.apache.commons.lang3.Streams {
          *                                                      Collectors.groupingBy(Person::getCity)));
          * }</pre>
          *
-         * @param <R> the type of the result
-         * @param <A> the intermediate accumulation type of the {@code Collector}
+         * @param <R>       the type of the result
+         * @param <A>       the intermediate accumulation type of the {@code Collector}
          * @param collector the {@code Collector} describing the reduction
          * @return the result of the reduction
          * @see #collect(Supplier, BiConsumer, BiConsumer)
@@ -187,7 +181,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * can be parallelized without requiring additional synchronization.
          *
          * <p>This is a terminal operation.
-         *
+         * <p>
          * Note There are many existing classes in the JDK whose signatures are
          * well-suited for use with method references as arguments to {@code collect()}.
          * For example, the following will accumulate strings into an {@code ArrayList}:
@@ -204,20 +198,20 @@ public class Streams extends org.apache.commons.lang3.Streams {
          *                                 .toString();
          * }</pre>
          *
-         * @param <R> type of the result
-         * @param <A> Type of the accumulator.
-         * @param pupplier a function that creates a new result container. For a
-         *                 parallel execution, this function may be called
-         *                 multiple times and must return a fresh value each time.
+         * @param <R>         type of the result
+         * @param <A>         Type of the accumulator.
+         * @param pupplier    a function that creates a new result container. For a
+         *                    parallel execution, this function may be called
+         *                    multiple times and must return a fresh value each time.
          * @param accumulator An associative, non-interfering, stateless function for
-         *   incorporating an additional element into a result
-         * @param combiner An associative, non-interfering, stateless
-         *   function for combining two values, which must be compatible with the
-         *   accumulator function
+         *                    incorporating an additional element into a result
+         * @param combiner    An associative, non-interfering, stateless
+         *                    function for combining two values, which must be compatible with the
+         *                    accumulator function
          * @return The result of the reduction
          */
         public <A, R> R collect(final Supplier<R> pupplier, final BiConsumer<R, ? super O> accumulator,
-                final BiConsumer<R, R> combiner) {
+                                final BiConsumer<R, R> combiner) {
             makeTerminated();
             return stream().collect(pupplier, accumulator, combiner);
         }
@@ -232,7 +226,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          *         result = accumulator.apply(result, element)
          *     return result;
          * }</pre>
-         *
+         * <p>
          * but is not constrained to execute sequentially.
          *
          * <p>The {@code identity} value must be an identity for the accumulator
@@ -241,14 +235,14 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * The {@code accumulator} function must be an associative function.
          *
          * <p>This is a terminal operation.
-         *
+         * <p>
          * Note Sum, min, max, average, and string concatenation are all special
          * cases of reduction. Summing a stream of numbers can be expressed as:
          *
          * <pre>{@code
          *     Integer sum = integers.reduce(0, (a, b) -> a+b);
          * }</pre>
-         *
+         * <p>
          * or:
          *
          * <pre>{@code
@@ -260,7 +254,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * operations parallelize more gracefully, without needing additional
          * synchronization and with greatly reduced risk of data races.
          *
-         * @param identity the identity value for the accumulating function
+         * @param identity    the identity value for the accumulating function
          * @param accumulator an associative, non-interfering, stateless
          *                    function for combining two values
          * @return the result of the reduction
@@ -276,7 +270,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          *
          * <p>This is an intermediate operation.
          *
-         * @param <R> The element type of the new stream
+         * @param <R>    The element type of the new stream
          * @param mapper A non-interfering, stateless function to apply to each element
          * @return the new stream
          */
@@ -287,6 +281,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
 
         /**
          * Converts the FailableStream into an equivalent stream.
+         *
          * @return A stream, which will return the same elements, which this FailableStream would return.
          */
         public Stream<O> stream() {
@@ -300,7 +295,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * returned and the predicate is not evaluated.
          *
          * <p>This is a short-circuiting terminal operation.
-         *
+         * <p>
          * Note
          * This method evaluates the <em>universal quantification</em> of the
          * predicate over the elements of the stream (for all x P(x)).  If the
@@ -308,7 +303,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * satisfied</em> and is always {@code true} (regardless of P(x)).
          *
          * @param predicate A non-interfering, stateless predicate to apply to
-         * elements of this stream
+         *                  elements of this stream
          * @return {@code true} If either all elements of the stream match the
          * provided predicate or the stream is empty, otherwise {@code false}.
          */
@@ -324,13 +319,13 @@ public class Streams extends org.apache.commons.lang3.Streams {
          * {@code false} is returned and the predicate is not evaluated.
          *
          * <p>This is a short-circuiting terminal operation.
-         *
+         * <p>
          * Note
          * This method evaluates the <em>existential quantification</em> of the
          * predicate over the elements of the stream (for some x P(x)).
          *
          * @param predicate A non-interfering, stateless predicate to apply to
-         * elements of this stream
+         *                  elements of this stream
          * @return {@code true} if any elements of the stream match the provided
          * predicate, otherwise {@code false}
          */
@@ -361,22 +356,23 @@ public class Streams extends org.apache.commons.lang3.Streams {
      *     final List&lt;String&gt; strList = list.stream()
      *         .map(mapper).collect(Collectors.toList());
      *  </pre>
-     *  as follows:
-     *  <pre>
+     * as follows:
+     * <pre>
      *     final List&lt;O&gt; list;
      *     final Method m;
      *     final List&lt;String&gt; strList = Functions.stream(list.stream())
      *         .map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
      *  </pre>
-     *  While the second version may not be <em>quite</em> as
-     *  efficient (because it depends on the creation of additional,
-     *  intermediate objects, of type FailableStream), it is much more
-     *  concise, and readable, and meets the spirit of Lambdas better
-     *  than the first version.
-     * @param <O> The streams element type.
+     * While the second version may not be <em>quite</em> as
+     * efficient (because it depends on the creation of additional,
+     * intermediate objects, of type FailableStream), it is much more
+     * concise, and readable, and meets the spirit of Lambdas better
+     * than the first version.
+     *
+     * @param <O>    The streams element type.
      * @param stream The stream, which is being converted.
      * @return The {@link org.apache.commons.lang3.Streams.FailableStream}, which has been created by
-     *   converting the stream.
+     * converting the stream.
      */
     public static <O> org.apache.commons.lang3.Streams.FailableStream<O> stream(final Stream<O> stream) {
         return new org.apache.commons.lang3.Streams.FailableStream<>(stream);
@@ -403,22 +399,23 @@ public class Streams extends org.apache.commons.lang3.Streams {
      *     final List&lt;String&gt; strList = list.stream()
      *         .map(mapper).collect(Collectors.toList());
      *  </pre>
-     *  as follows:
-     *  <pre>
+     * as follows:
+     * <pre>
      *     final List&lt;O&gt; list;
      *     final Method m;
      *     final List&lt;String&gt; strList = Functions.stream(list.stream())
      *         .map((o) -&gt; (String) m.invoke(o)).collect(Collectors.toList());
      *  </pre>
-     *  While the second version may not be <em>quite</em> as
-     *  efficient (because it depends on the creation of additional,
-     *  intermediate objects, of type FailableStream), it is much more
-     *  concise, and readable, and meets the spirit of Lambdas better
-     *  than the first version.
-     * @param <O> The streams element type.
+     * While the second version may not be <em>quite</em> as
+     * efficient (because it depends on the creation of additional,
+     * intermediate objects, of type FailableStream), it is much more
+     * concise, and readable, and meets the spirit of Lambdas better
+     * than the first version.
+     *
+     * @param <O>    The streams element type.
      * @param stream The stream, which is being converted.
      * @return The {@link org.apache.commons.lang3.Streams.FailableStream}, which has been created by
-     *   converting the stream.
+     * converting the stream.
      */
     public static <O> org.apache.commons.lang3.Streams.FailableStream<O> stream(final Collection<O> stream) {
         return stream(stream.stream());
@@ -482,7 +479,7 @@ public class Streams extends org.apache.commons.lang3.Streams {
      * new array.
      *
      * @param pElementType Type of an element in the array.
-     * @param <O> the type of the input elements
+     * @param <O>          the type of the input elements
      * @return a {@code Collector} which collects all the input elements into an
      * array, in encounter order
      */
