@@ -5,9 +5,9 @@ addutil 是一个 JAVA 工具类
 
 ## 开发工具
 
-IntelliJ CE IDEA 2021.3
+IntelliJ CE IDEA 2021.1
 
-OpenJdk 1.8.333 或者 Graalvm java8
+OpenJdk 1.8.341 或者 Graalvm java8
 
 Maven 3.6.3
 
